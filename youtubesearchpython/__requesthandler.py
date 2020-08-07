@@ -1,13 +1,6 @@
 import sys
-
-#########python2#########
-if sys.version_info < (2, 8):
-    from urllib import urlencode, urlopen
-
-#########python3#########
-else:
-    from urllib.request import urlopen
-    from urllib.parse import urlencode
+from urllib.request import urlopen
+from urllib.parse import urlencode
 
 
 class requesthandler:

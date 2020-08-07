@@ -1,12 +1,6 @@
 import sys
 
-#########python2#########
-if sys.version_info < (2, 8):
-    import HTMLParser
-
-#########python3#########
-else:
-    import html
+import html
 
 
 class pagehandler:
@@ -32,10 +26,6 @@ class pagehandler:
         #########Transversing Through Network Request Array.#########
 
         self.pageSource = self.page.split()
-
-        #########python2#########
-        if sys.version_info < (2, 8):
-            html = HTMLParser.HTMLParser()
 
         for index in range(0, len(self.pageSource) - 1, 1):
 
